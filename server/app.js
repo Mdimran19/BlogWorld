@@ -26,7 +26,7 @@ cloudinary.config({
     api_secret: process.env.CLOUDINARY_API_SECRET,
 });
 //app.use(authMiddleware)
-app.get('/protected', (req,res)=>{
+app.get('/api', (req,res)=>{
     res.json({message: "This is a popular blog site in bangladesh"})
 });
 
