@@ -17,7 +17,7 @@ const BlogList = () => {
     const fetchBlogs = async () => {
       try {
 
-        const response = await axios.get('https://blogworld-client.onrender.com//blog/blog-get');
+        const response = await axios.get('https://blogworld-client.onrender.com/blog/blog-get');
         if (response && response.data) {
           setBlogs(response.data); // Set blogs data
         } else {
