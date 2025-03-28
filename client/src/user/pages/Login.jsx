@@ -24,7 +24,7 @@ const Login = () => {
     e.preventDefault();
 
     try {
-      const response = await axios.post(`${apiUrl}/user/login`, formData);
+      const response = await axios.post(`${apiUrl}/user/loginuser`, formData);
       localStorage.setItem('token', response.data.token);
       toast.success('sucess!');
       setFormData({ email: '', password: '' });
