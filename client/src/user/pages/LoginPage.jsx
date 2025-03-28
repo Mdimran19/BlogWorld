@@ -14,7 +14,7 @@ const LoginPage = () => {
       e.preventDefault();
   
       try {
-        const response = await axios.post(`${apiUrl}/blog/loginadmin`, {
+        const response = await axios.post(`${apiUrl}/blog/login`, {
           email,
           password,
         });
